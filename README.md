@@ -28,5 +28,5 @@ If you find a bug, need help or wish to make a suggestion, please open an issue.
 ## Contributing
 Pull requests are welcome. If you are wanting to add a new feature, consider opening an issue first.
 
-##Licence
+## Licence
 This project is licenced under the GNU GPL v3.0.
