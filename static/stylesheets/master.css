@@ -31,14 +31,14 @@ header {
     justify-content: center !important;
 }
 }
-code {
+/* code {
     white-space: pre-line;
     background-color: var(--accent-2);
     color: var(--highlight-1);
     display: block;
     padding: 10px;
     border-radius: 7px;
-}
+} */
 body {
   font-family: lato-regular;  
   margin: 0;
