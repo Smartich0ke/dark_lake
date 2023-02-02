@@ -181,6 +181,12 @@ hr {
     justify-content: left;
     align-items: flex-start;
 }
+article a {
+ color: var(--highlight-2);
+}
+article a:hover {
+    color: var(--highlight-3);
+}
 article p {
     line-height: 1.5;
 }
