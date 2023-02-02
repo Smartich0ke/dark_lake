@@ -1,4 +1,13 @@
-
+<div class="dropdown">
+    <a href="javascript:void(0);" class="navbutton" onclick="toggleDropdown()">&#9776;</a>
+    <div class="dropdownContent" id="dropdownContent">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.topnav }}
+        <a href="{{ .URL }}" title="{{ .Title }}">{{ .Pre }}{{ .Name }}</a>
+        {{ end }}
+        <a href="http://nikolaipatrick.com"> <span><img class="externalLink" src="/images/arrow-up-right-from-square-solid.svg" alt="" srcset="" width="12px" height="12px"></span>nikolaipatrick.com</a>
+    </div>
+</div>
 <h1 class="siteTitle">{{ .Site.Title }}</h1>
 <div class="linksBox">
     {{ $currentPage := . }}
@@ -8,7 +17,10 @@
 </div>
 <div class="headerButtonsFlex">
     <button id="primaryDarkToggle" class="themeButton">
-        <img id="rotateCircle" class="lightDarkToggle" src="/images/circle-half-stroke-solid.svg" alt="light/dark" srcset="" height="24px" width="24px">
+        <img id="rotateCircle" class="lightDarkToggle"
+            src="/images/circle-half-stroke-solid.svg" alt="light/dark"
+            srcset="" height="24px" width="24px">
     </button>
-    <a class="backToMainSite" href="http://nikolaipatrick.com">back to nikolaipatrick.com</a>
+    <a class="backToMainSite" href="http://nikolaipatrick.com">back to
+        nikolaipatrick.com</a>
 </div>

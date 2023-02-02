@@ -6,6 +6,12 @@
     }
 }
 @media screen and (max-width: 700px) {
+.linksBox {
+    display: none !important;
+}
+.navbutton {
+    display: block !important;
+}
 .footerFlex {
     justify-content: space-evenly !important;
 }
@@ -24,8 +30,13 @@
 aside {
     width: 100vw !important;
 }
+aside ul {
+    min-height: fit-content !important;
+}
 main {
     width: 85% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 header {
     justify-content: center !important;
@@ -135,6 +146,9 @@ aside{
     display: inline-block;
     width: 20vw;
 }
+aside ul {
+    min-height: 100vh;
+}
 aside ul li a{
     text-decoration: none;
     color: var(--highlight-2);
@@ -193,7 +207,7 @@ article p {
 article img {
     border-radius: 10px;
     max-height: 600px;
-    max-width: fit-content;
+    max-width: 100%;
 }
 .footerFlex {
     display: flex;
@@ -240,6 +254,9 @@ article img {
 }
 .articleTag {
     margin: 10px 15px 10px 0px;
+}
+.articleTag:hover {
+    color: var(--highlight-2);
 }
 .articleTagsContainer {
     display: flex;
@@ -297,4 +314,36 @@ article img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px #0000001f;
+}
+.navbutton {
+    display: none;
+    text-decoration: none;
+    color: var(--highlight-2);
+    padding: 10px;
+    font-size: 30px;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdownContent a {
+    float: none;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdownContent a:hover {
+    background-color: var(--highlight-2);
+}
+.show {
+    display: block;
+}
+.dropdownContent .externalLink {
+    filter: invert(0%);
 }
