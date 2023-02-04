@@ -6,6 +6,9 @@
     }
 }
 @media screen and (max-width: 700px) {
+.dropdown {
+    position: inherit !important;
+}
 .linksBox {
     display: none !important;
 }
@@ -346,4 +349,7 @@ article img {
 }
 .dropdownContent .externalLink {
     filter: invert(0%);
+}
+.dropdown {
+    position: absolute;
 }
