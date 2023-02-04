@@ -1,7 +1,10 @@
 {{ define "main" }}
 <h1>Projects by Nikolai Patrick</h1>
 <h2>Landing</h2>
-<p>Find projects on the left or go to All Projects.</p>
+<p>
+   This is a website where I post various documentation, downloads, images, and any other iformation that I want to share with the world about my projects.
+   Projects are listed on the left, and the most recent post is listed below. You can also view all posts by clicking the "All Articles" button up the top.
+</p>
 <br><br>
 <h1>Most Recent Post</h1>
 {{- range ( where site.RegularPages "Section" "projects" | first 1 ) }}
